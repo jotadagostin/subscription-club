@@ -1,0 +1,51 @@
+.hero {
+  width: 100%;
+  max-width: 90rem;
+
+  background: url(/assets/images/hero-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  & nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 400px;
+    margin-top: 15px;
+
+    button {
+      background-color: var(--pink-dark);
+      width: 89px;
+      height: 40px;
+      border-style: none;
+      border-radius: 10px;
+      color: var(--text-little);
+      font: var(--button);
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      transition: color 0.4s;
+    }
+
+    button:hover {
+      background-color: var(--pink-base);
+      transition: scale 500ms;
+    }
+  }
+
+  & a img {
+    width: 150px;
+    height: 58px;
+  }
+
+  & .title {
+    text-align: center;
+  }
+}
