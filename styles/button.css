@@ -3,7 +3,7 @@ a.button {
   font: var(--button);
   color: var(--text-title);
   border-radius: 0.5rem;
-  height: 2.5rem;
+  height: 2rem;
   width: 100%;
 
   display: flex;
@@ -11,7 +11,7 @@ a.button {
   justify-content: center;
   overflow: hidden;
   position: relative;
-  padding: 15px;
+  padding: 5px 10px 5px 10px;
 
   & span {
     z-index: 1;
