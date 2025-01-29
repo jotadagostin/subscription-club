@@ -1,4 +1,4 @@
-.hero {
+#hero {
   width: 100%;
   max-width: 90rem;
 
@@ -12,32 +12,13 @@
   top: 0%;
   bottom: 0%;
 
-  & nav {
+  & header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 400px;
     margin-top: 15px;
-
-    button {
-      background-color: var(--pink-dark);
-      width: 89px;
-      height: 40px;
-      border-style: none;
-      border-radius: 10px;
-      color: var(--text-little);
-      font: var(--button);
-      position: relative;
-      cursor: pointer;
-      overflow: hidden;
-      transition: color 0.4s;
-    }
-
-    button:hover {
-      background-color: var(--pink-base);
-      transition: scale 500ms;
-    }
   }
 
   & a img {
@@ -48,4 +29,8 @@
   & .title {
     text-align: center;
   }
+}
+
+.only-mobile {
+  display: none;
 }
