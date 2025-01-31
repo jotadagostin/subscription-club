@@ -58,26 +58,26 @@ section#hero {
     opacity: 0;
     animation: appear 2s 1s forwards;
   }
-}
 
-#hero-background {
-  background-color: url(/assets/images/hero-background-gradient.svg) top
-    center/cover no-repeat;
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  animation: appear 1s forwards;
-  z-index: -1;
-
-  &::after {
-    content: "";
-    background: url(/assets/images/hero-background.svg) top center/cover
+  #hero-background {
+    background: url(/assets/hero-background-gradient.svg) top center/cover
       no-repeat;
     position: absolute;
     inset: 0;
-    height: 100%;
     opacity: 0;
-    animation: appear 2s 500ms forwards;
+    animation: appear 1s forwards;
+    z-index: -1;
+
+    &::after {
+      content: "";
+      background: url(/assets/hero-background.svg) top center/cover no-repeat;
+      position: absolute;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      opacity: 0;
+      animation: appear 2s 500ms forwards;
+    }
   }
 }
 
