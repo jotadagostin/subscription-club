@@ -25,12 +25,12 @@ section#hero {
     margin: auto;
     padding-top: 3.5rem;
     & div.button-wrapper {
-      width: 4.857rem;
+      width: 4.875rem;
       margin-block: 0.5625rem;
     }
     & > a > img {
-      &.only-dektop {
-        max-width: 4.875rem;
+      &.only-desktop {
+        max-width: 14.375rem;
       }
       &.only-mobile {
         max-width: 4.875rem;
@@ -43,8 +43,9 @@ section#hero {
     max-width: 41rem;
     margin: auto;
     text-align: center;
-    font: var(--title-lg);
-    color: var(--text-litle);
+    font: var(--font-title-lg);
+    color: var(--color-text-title);
+
     opacity: 0;
     animation: appear 2s 500ms forwards;
   }
@@ -52,28 +53,35 @@ section#hero {
     max-width: 34.875rem;
     margin: auto;
     padding-top: 2rem;
-    font: var(--body-lg);
-    color: var(--text-body);
+    font: var(--font-body-lg);
     text-align: center;
+
     opacity: 0;
     animation: appear 2s 1s forwards;
   }
 
   #hero-background {
-    background: url(/assets/hero-background-gradient.svg) top center/cover
+    background: url(../assets/hero-background-gradient.svg) top center/cover
       no-repeat;
+
     position: absolute;
     inset: 0;
+
     opacity: 0;
     animation: appear 1s forwards;
+
     z-index: -1;
 
     &::after {
       content: "";
-      background: url(/assets/hero-background.svg) top center/cover no-repeat;
+
+      background: url(../assets/hero-background.svg) top center/cover no-repeat;
+
       position: absolute;
       inset: 0;
+
       height: 100%;
+
       opacity: 0;
       animation: appear 2s 500ms forwards;
     }
@@ -83,5 +91,28 @@ section#hero {
 @keyframes appear {
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 71.25rem) {
+  section#hero {
+    & header {
+      padding-top: 1.25rem;
+    }
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  section#hero {
+    & header {
+      & > a > img {
+        &.only-desktop {
+          display: none;
+        }
+        &.only-mobile {
+          display: inline-block;
+        }
+      }
+    }
   }
 }

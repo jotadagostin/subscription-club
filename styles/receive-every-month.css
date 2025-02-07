@@ -28,7 +28,7 @@ section#receive-every-month {
       display: flex;
       justify-content: space-between;
       & div#ouija-planchette {
-        max-width: 10rem;
+        min-width: 10rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -41,7 +41,6 @@ section#receive-every-month {
           }
         }
       }
-
       & div#cristal-ball {
         display: flex;
         align-items: center;
@@ -59,7 +58,7 @@ section#receive-every-month {
     }
   }
 
-  & > div #opened-spellbook {
+  & > div#opened-spellbook {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +90,7 @@ section#receive-every-month {
           }
         }
         &:nth-child(2) {
-          animation: colorTextBody 500 ms ease 500ms forwards;
+          animation: colorTextBody 500ms ease 500ms forwards;
 
           & > b {
             animation: colorBlue 500ms ease 500ms forwards;
@@ -105,10 +104,18 @@ section#receive-every-month {
           }
         }
       }
-      & div#cristal-ball {
-        & img {
-          transition: all 500ms, scale 500ms 1s;
-          scale: 1s;
+      & > div {
+        & div#ouija-planchette {
+          & img {
+            transition: all 500ms, scale 500ms 500ms;
+            scale: 1;
+          }
+        }
+        & div#cristal-ball {
+          & img {
+            transition: all 500ms, scale 500ms 1s;
+            scale: 1;
+          }
         }
       }
     }
@@ -117,12 +124,11 @@ section#receive-every-month {
 
 @keyframes colorTextBody {
   to {
-    color: var(--text-body);
+    color: var(--color-text-body);
   }
 }
-
 @keyframes colorBlue {
   to {
-    color: var(--blue-light);
+    color: var(--color-blue-light);
   }
 }
