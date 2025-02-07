@@ -23,7 +23,7 @@ section#hero {
     justify-content: space-between;
     max-width: 70rem;
     margin: auto;
-    padding-top: 1.5rem;
+    padding-top: 3.5rem;
     & div.button-wrapper {
       width: 4.857rem;
       margin-block: 0.5625rem;
@@ -39,7 +39,7 @@ section#hero {
     }
   }
   & h1 {
-    padding-top: 5.375rem;
+    padding-top: 10.25rem;
     max-width: 41rem;
     margin: auto;
     text-align: center;
@@ -73,8 +73,7 @@ section#hero {
       background: url(/assets/hero-background.svg) top center/cover no-repeat;
       position: absolute;
       inset: 0;
-      width: 100vw;
-      height: 100vh;
+      height: 100%;
       opacity: 0;
       animation: appear 2s 500ms forwards;
     }
