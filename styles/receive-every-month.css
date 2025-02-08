@@ -27,7 +27,7 @@ section#receive-every-month {
       height: calc(var(--large-image) + 0.4375rem);
       display: flex;
       justify-content: space-between;
-      & div#ouija-planchette {
+      & div.ouija-planchette {
         min-width: 10rem;
         display: flex;
         justify-content: center;
@@ -41,7 +41,7 @@ section#receive-every-month {
           }
         }
       }
-      & div#cristal-ball {
+      & div.cristal-ball {
         display: flex;
         align-items: center;
         --large-image: 4.5625rem;
@@ -58,7 +58,7 @@ section#receive-every-month {
     }
   }
 
-  & > div#opened-spellbook {
+  & > div.opened-spellbook {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +74,7 @@ section#receive-every-month {
   }
 
   &:hover {
-    & > div#opened-spellbook {
+    & > div.opened-spellbook {
       img {
         scale: 1;
       }
@@ -105,13 +105,13 @@ section#receive-every-month {
         }
       }
       & > div {
-        & div#ouija-planchette {
+        & div.ouija-planchette {
           & img {
             transition: all 500ms, scale 500ms 500ms;
             scale: 1;
           }
         }
-        & div#cristal-ball {
+        & div.cristal-ball {
           & img {
             transition: all 500ms, scale 500ms 1s;
             scale: 1;
