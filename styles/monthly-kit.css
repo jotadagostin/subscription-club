@@ -1,0 +1,22 @@
+section#monthly-kit {
+  background: url(../assets/monthly-kit/blur.svg) top center/contain no-repeat;
+  padding-top: 14.6875rem;
+  text-align: center;
+
+  & > h2 {
+    font: var(--font-title-sm);
+    color: var(--color-text-title);
+    display: flex;
+    margin-inline: auto;
+    max-width: 26.5625rem;
+    gap: 1rem;
+    & > img {
+      width: 2rem;
+    }
+  }
+  & > p {
+    font: var(--font-body-md);
+    color: var(--color-text-body);
+    padding-bottom: 0.3125rem 5.5rem;
+  }
+}
