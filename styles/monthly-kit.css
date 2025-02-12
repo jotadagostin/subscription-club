@@ -64,7 +64,7 @@ section#monthly-kit {
 
       & img[src$="monthly-kit/book.svg"] {
         padding-block: 8.375rem 10.5625rem;
-        width: 25.1875rem;
+        width: 29.1875rem;
       }
 
       & p {
@@ -94,7 +94,7 @@ section#monthly-kit {
         width: 10.75rem;
         position: absolute;
         left: 53%;
-        top: 10%;
+        top: 15%;
       }
       & > img[src*="bookmark-yellow"] {
         z-index: -1;
@@ -135,7 +135,7 @@ section#monthly-kit {
         transition: all 400ms;
       }
       & > img[src*="arrow-from-pin"] {
-        width: 6.5625rem !important;
+        width: 5.5625rem !important;
         position: absolute !important;
         left: 40% !important;
         top: 54% !important;
@@ -145,7 +145,7 @@ section#monthly-kit {
         transition: all 400ms;
       }
       & > img[src*="pin"] {
-        width: 13.875rem;
+        width: 11.875rem;
         position: absolute;
         left: 26%;
         top: 55%;
