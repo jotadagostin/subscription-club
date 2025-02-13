@@ -24,28 +24,28 @@ section#monthly-kit {
     &:hover {
       & div.book-content {
         & p:first-child {
-          transform: translate(-190%, -700%);
+          transform: translate(-175%, -700%);
         }
         & img[src*="arrow-from-book"] {
-          transform: translate(-115%, -500%);
+          transform: translate(-95%, -500%);
         }
 
         & > img[src*="bookmark-yellow"] {
-          transform: translate(65%, 20%) rotate(12deg);
+          transform: translate(55%, 20%) rotate(12deg);
         }
 
         & > img[src*="bookmark-purple"] {
-          transform: translate(123%, -2%) rotate(22deg);
+          transform: translate(93%, -2%) rotate(22deg);
         }
         & > img[src*="arrow-from-purple-bookmark"] {
-          transform: translate(160%, 80%);
+          transform: translate(90%, 80%);
         }
         & p:nth-child(7) {
-          transform: translate(105%, 800%);
+          transform: translate(25%, 800%);
         }
 
         & p:nth-child(8) {
-          transform: translateX(-210%);
+          transform: translateX(-165%);
         }
         & > img[src*="arrow-from-pin"] {
           transform: translate(-308%, 0%) !important;
