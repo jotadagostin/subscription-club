@@ -1,0 +1,35 @@
+section#subscription {
+  background: url(../assets/subscription/blur.svg) top center/contain no-repeat;
+  padding-block: 29.5rem 18.875rem;
+  h2 {
+    font: var(--font-title-sm);
+    color: var(--color-text-title);
+    text-align: center;
+    padding-bottom: 3.5rem;
+  }
+
+  & div.cards {
+    height: 37.875rem;
+    padding-block: 5.13025rem 6.744375rem;
+
+    &:hover {
+      & .cards-center-position {
+        & div.card {
+          &:nth-child(1) {
+            transform: translate(-100%, 15%) rotate(-8deg);
+          }
+          &:nth-child(3) {
+            transform: translate(100%, 15%) rotate(8deg);
+          }
+        }
+      }
+    }
+
+    & .cards-center-position {
+      position: relative;
+      margin: auto;
+      height: 26rem;
+      max-width: 18rem;
+    }
+  }
+}
