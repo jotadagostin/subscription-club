@@ -1,0 +1,49 @@
+footer {
+  height: 25.9375rem;
+  padding-block: 10.625rem;
+  padding-inline: 2rem;
+  margin: auto;
+  background: url(../assets/book-trace-background.svg) top center/cover
+    no-repeat;
+
+  & > div.footer-container {
+    max-width: 70rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-inline: auto;
+
+    & > div:first-child {
+      max-width: 16.5rem;
+
+      & > a > img {
+        max-width: 16.5rem;
+      }
+      & > div:nth-child(3) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+        & > svg {
+          width: 2.5rem;
+          height: 2.5rem;
+          & path {
+            fill: var(--color-blue-light);
+          }
+          &:hover {
+            & path {
+              fill: var(--color-text-body);
+            }
+            background-color: var(--color-shape-stroke);
+            border-radius: 50%;
+          }
+        }
+      }
+      & .divider {
+        height: 1px;
+        background-color: var(--color-shape-stroke);
+        width: 100%;
+        margin-block: 0.75rem;
+      }
+    }
+  }
+}
