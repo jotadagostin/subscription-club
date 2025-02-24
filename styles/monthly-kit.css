@@ -156,3 +156,16 @@ section#monthly-kit {
     }
   }
 }
+
+@media (max-width: 24.4375rem) {
+  #monthly-kit {
+    display: flex;
+    flex-direction: column;
+
+    & div.book-content {
+      img {
+        display: none;
+      }
+    }
+  }
+}
