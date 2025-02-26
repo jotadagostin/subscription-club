@@ -121,3 +121,10 @@ footer {
     }
   }
 }
+
+@media (max-width: 24.4375rem) {
+  .footer-mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+}
