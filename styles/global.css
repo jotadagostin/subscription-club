@@ -44,6 +44,8 @@
   --font-button: 700 0.875rem / 0 var(--font-family);
   --font-link: 500 0.875rem / normal var(--font-family);
   --font-tag: 700 0.625rem / normal var(--font-family);
+
+  --max-width: 375px;
 }
 
 body {
