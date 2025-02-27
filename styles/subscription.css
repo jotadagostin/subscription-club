@@ -186,5 +186,14 @@ section#subscription {
   }
 }
 
+section#subscription-mobile {
+  display: none;
+}
 @media (max-width: 24.4375rem) {
+  section#subscription {
+    display: none;
+  }
+  section#subscription-mobile {
+    display: flex;
+  }
 }
