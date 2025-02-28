@@ -377,6 +377,7 @@ section#subscription-mobile {
   }
 
   section#subscription-mobile {
+    display: block;
     & h1 {
       font-size: 2rem;
       margin-bottom: 3.5rem;
