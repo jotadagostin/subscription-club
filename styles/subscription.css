@@ -189,6 +189,7 @@ section#subscription {
 /* css desktop subiscription-mobile(display none) */
 
 section#subscription-mobile {
+  display: none;
   background: url(../assets/monthly-kit/pricing-background.png) no-repeat
     center/cover;
   padding-top: 8rem;
@@ -223,7 +224,7 @@ section#subscription-mobile {
     max-width: var(--max-width);
     flex-direction: row;
 
-    & img [src*="star"] {
+    & img [alt*="star"] {
       transition: rotate 500ms;
     }
 
@@ -373,5 +374,53 @@ section#subscription-mobile {
 @media (max-width: 24.4375rem) {
   section#subscription {
     display: none;
+  }
+
+  section#subscription-mobile {
+    & h1 {
+      font-size: 2rem;
+      margin-bottom: 3.5rem;
+    }
+
+    & h1 + div {
+      max-width: var(--max-width);
+      margin-inline: auto;
+      padding-block: 5rem 8rem;
+      justify-content: center;
+      margin-inline: auto;
+      overflow: hidden;
+      flex-direction: column;
+
+      & img[src*="star"] {
+        aspect-ratio: 1;
+        width: 1.5rem;
+      }
+
+      & img + img[src*="star"] {
+        width: 0.875rem;
+      }
+
+      & .card {
+        width: 18rem;
+        height: 26rem;
+
+        & h2 + span {
+          line-height: 100%;
+        }
+        & a {
+          max-width: 14rem;
+        }
+
+        &:nth-child(2) {
+          z-index: 1;
+          position: relative;
+          & .rbbt {
+            position: absolute;
+            top: -3.25rem;
+            left: 2rem;
+          }
+        }
+      }
+    }
   }
 }
